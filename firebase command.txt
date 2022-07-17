@@ -1,0 +1,30 @@
+1> First install Globally Node & Npm Then check version
+2> Make A Firebase Account 
+3> i will suggest you - you will create project on firebase link
+4> install global firebase and tools +> npm install -g firebase || firebase-tools
+5> activate the flutterfire cli globaly
+cmd => dart pub global activate flutterfire_cli > this command give you a path exmp = C:\Users\XYZ\AppData\Local\Pub\Cache\bin
+6> Simply Add the path on your pc envirement in system path
+7> login firebase  cmd line - => firebase login
+
+After login <>
+
+1> Make A New Flutter Project || Git clone project
+2> open your project in vs code cntrl+shift+` pres this key || open terminal 
+	
+	__ Run Command __ flutterfire configure
+if any error given ?? reopen flutter project in vs code
+
+3> If your flutterfire command successfully execute || you will see more than error in your dart code.
+4> Remove the error simply simply run this command in your project terminal (flutter pub add firebase_core)
+5> 
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  runApp(const MyApp());
+}
+
+6> Registration And Sign in https://firebase.flutter.dev/docs/auth/usage/ open this link
+7> Error  simply Run this command on your project terminal (flutter pub add firebase_auth)
+  ??? if you are get latest version link > https://pub.dev/packages/firebase_auth/install 
